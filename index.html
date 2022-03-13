@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div id="current-weather-details">
+
+        <div class="weather-info">
+            <div class="lds-spinner hidden by-coords">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <table id="by-coords" class="by-coords">
+                <tr>
+                    <th>
+                        Humidity:
+                    </th>
+                    <td id="current-humidity-by-coords">
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Pressure:
+                    </th>
+                    <td id="current-pressure-by-coords">
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Temperature:
+                    </th>
+                    <td id="current-temperature-by-coords">
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Wind Speed:
+                    </th>
+                    <td id="current-wind-speed-by-coords">
+                        --
+                    </td>
+                </tr>
+
+            </table>
+            <button id="getWeather" name="by-coords">Get Current Weather!</button>
+
+        </div>
+        <div class="weather-info">
+            <div class="lds-spinner hidden by-city-name">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <table id="by-city-name" class="by-city-name">
+                <tr>
+                    <th>
+                        Humidity:
+                    </th>
+                    <td id="current-humidity-by-city-name">
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Pressure:
+                    </th>
+                    <td id="current-pressure-by-city-name">
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Temperature:
+                    </th>
+                    <td id="current-temperature-by-city-name">
+                        --
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Wind Speed:
+                    </th>
+                    <td id="current-wind-speed-by-city-name">
+                        --
+                    </td>
+                </tr>
+
+            </table>
+            <div id="buttons">
+                <button id="getWeatherByCityName" name='by-city-name'>Get Weather</button>
+                <button id="micro"></button>
+            </div>
+            <input id="cityName" type="text" placeholder="Kyiv" value="Massachusetts">
+        </div>
+    </div>
+    <p id="weather-summary"></p>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
